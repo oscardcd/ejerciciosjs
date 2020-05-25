@@ -7,7 +7,7 @@ function ingresar() {
     nombre = document.getElementById("nombre").value;
     edad = document.getElementById("edad").value;
     sexo = document.getElementById("sexo").value;
-
+   
     if(validarDatos())
     {
         operacion();
@@ -28,6 +28,7 @@ function validarDatos() {
         }
     }
     return true;
+
 }
 
 function operacion() {
@@ -50,7 +51,7 @@ function operacion() {
 
         nm++;
         edadm +=parseInt(edad); 
-        alert(edad+""+edadm+""+nm) 
+        
     }
     promedadm = edadm / parseInt(nm);
     promedadh = edadh / parseInt(nh);
