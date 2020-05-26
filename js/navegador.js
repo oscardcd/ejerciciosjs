@@ -1,7 +1,10 @@
 function cargarfiesta()
 {
-    var capa = document.getElementById("contenedor");
-capa.innerText = "";
+    alert("inicia");
+   var contenedor=document.getElementById("contenedor");
+   
+   contenedor.innerHTML='<object type="type/html" data="asisfiesa.html" ></object>';
+    
 }
 
 
