@@ -1,4 +1,4 @@
-var nombre, edad, sexo;
+    var nombre, edad, sexo;
 var contador = 0, promedadh=0, promedadm=0, nm=0, edadh=0, nh=0, edadm=0, Medad = 0;
 var nomedadM = "";
 
@@ -70,9 +70,6 @@ function limpiarCampo() {
     document.getElementById("edad").value = "";
     document.getElementById("sexo").value = Seleccionar;
     document.getElementById("nombre").focus();
-    
-
-   
 }
 
 
