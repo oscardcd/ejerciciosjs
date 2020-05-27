@@ -1,5 +1,5 @@
 var nombre,identificacion=0;
-var salario=0,ahorro=0,horas=0;
+var salario=27500,ahorro=0,horas=0,sueldototal;
 
 function ingresar()
 {
@@ -11,8 +11,8 @@ function ingresar()
     if(validar())
     {
         calcular();
-
     }
+    limpiarcampo();
 }
 
 function validar();
@@ -27,5 +27,25 @@ function validar();
 
 function calcular();
 {
+if(Ahorro==ahorro)
+{
+sueldototal=parseInt(salario * horas)-2;
+}
+else
+{
+sueldototal=parseInt (salario * horas);
+}
+}
 
+function mostrar()
+{
+document.getElementById("sueldo").innerHTML="SU sueldo total es: "+sueldototal;
+}
+function limpiarcampo();
+{
+document.getElementById("Nombre").value="";
+document.getElementById("Identificacion").value=0;
+document.getElementById("Horas").value=0;
+document.getElementById("Ahorro").value=Selecionar;
+document.getElementById("Nombre").focus();
 }

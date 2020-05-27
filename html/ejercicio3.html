@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>EMPLEADOS</h1>
-    <div>
-       <label>Nombre</label><br>
-       <input class="text" id="Nombre">
-    </div>
-    <BR>
-    <div>
-        <label>IDENTIFICACION</label><br>
-        <input type="text" id="Identificacion">
-    </div>
-    <br>
-    <div>
+    <script src="../js/ejerciscio3.js"></script>
+  </head>
+  <body>
+    <div class="todo">
+      <h1>EMPLEADOS</h1>
+      <div>
+        <label>Nombre</label><br />
+        <input class="text" id="Nombre" />
+      </div>
+      <br />
+      <div>
+        <label>IDENTIFICACION</label><br />
+        <input type="text" id="Identificacion" />
+      </div>
+      <br />
+      <div>
         <label>Ingrese las horas trabajadas</label>
-        <br>
-        <input type="text" id="Horas">
-    </div>
-    <br>
-    <div>
+        <br />
+        <input type="text" id="Horas" />
+      </div>
+      <br />
+      <div>
         <label>¿Desea ahorrar el 2% de su salario?</label>
-        <br>
+        <br />
         <select id="Ahorro">
-            <option>Selecionar</option>
-            <option id="ahorro">Si</option>
-            <option>No</option>
+          <option>Selecionar</option>
+          <option id="ahorro">Si</option>
+          <option>No</option>
         </select>
+      </div>
+      <br />
+      <div>
+        <input
+          type="button"
+          id="ingresar"
+          value="Ingresar"
+          onclick="ingresar()"
+        />
+        <input type="button" id="mostrar" value="mostrar" onclick="mostrar()" />
+      </div>
+      <div>
+        <label for="sueldo" id="sueldo"></label>
+      </div>
     </div>
-    <br>
-    <div>
-        <input type="button" value="Ingresar" onclick="ingresar()">
-
-    </div>
-
-    
-</body>
+  </body>
 </html>
