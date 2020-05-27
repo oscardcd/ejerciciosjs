@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="../js/ejerciscio3.js"></script>
-  </head>
-  <body>
-    <div class="todo">
-      <h1>EMPLEADOS</h1>
-      <div>
-        <label>Nombre</label><br />
-        <input class="text" id="Nombre" />
-      </div>
-      <br />
-      <div>
-        <label>IDENTIFICACION</label><br />
-        <input type="text" id="Identificacion" />
-      </div>
-      <br />
-      <div>
+
+<h1>EMPLEADOS</h1>
+    <div>
+       <label>Nombre</label><br>
+       <input type="text" class="form-control col-md-2" id="Nombre">
+    </div>
+    <BR>
+    <div>
+        <label>IDENTIFICACION</label><br>
+        <input type="text" id="Identificacion">
+    </div>
+    <br>
+    <div>
         <label>Ingrese las horas trabajadas</label>
         <br />
         <input type="text" id="Horas" />
@@ -48,5 +39,7 @@
         <label for="sueldo" id="sueldo"></label>
       </div>
     </div>
-  </body>
-</html>
+    <br>
+    <div>
+        <input type="button" value="Ingresar" onclick="ingresar()">
+    </div>
